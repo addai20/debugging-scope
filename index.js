@@ -35,6 +35,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
    * QUESTION 3
    */
 
+   let arr = [];
+   function addToArray(arr, element) {
+     arr.push(element);
+   }
+
+   addToArray([], 1);
+   document.getElementById("arr").innerText = `Should be 1: "${arr[0]}"`
+
+  /*
+   * QUESTION 4
+   */
+
   /* fib(n) should calculate the nth element in the fibonacci squence */
   function fib(n) {
     /* First two numbers are both 1 */
